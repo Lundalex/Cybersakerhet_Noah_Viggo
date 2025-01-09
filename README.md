@@ -5,7 +5,7 @@ Nödvändiga libraries:
 pip install pyinstaller
 ```
 
-Om detta inte fungerar:
+Om detta **inte** fungerar:
 
 ```powershell
 python -m pip install pyinstaller
