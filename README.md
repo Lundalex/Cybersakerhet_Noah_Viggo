@@ -1,17 +1,17 @@
 # Alphabetical Authentication
 
 Nödvändiga libraries:
-```bash
+```powershell
 pip install pyinstaller
 ```
 
 Om detta inte fungerar:
 
-```bash
+```powershell
 python -m pip install pyinstaller
 ```
 
 För att paketera filen till en `.exe fil` användes följande kommando:
 
-```bash
+```powershell
 pyinstaller --onefile --console alpha_auth.py
