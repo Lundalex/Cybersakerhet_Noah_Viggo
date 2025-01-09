@@ -2,6 +2,7 @@ import random
 import string
 import threading
 import os
+import signal
 
 def alphabet_encryption(message:str):
     alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -21,10 +22,10 @@ def remove_the_file():
     if os.path.exists("message.txt") and remove_the_file.shouldDelete:
         os.remove("message.txt")  # Remove the file if it exists
         print("You weren't fast enough!")
-        quit()
+        os.kill(os.getpid(), signal.SIGTERM)
     else:
         remove_the_file.shouldDelete=True
-    threading.Timer(180, remove_the_file).start() # update every 3 minutes
+    threading.Timer(4, remove_the_file).start() # update every 3 minutes
 
 remove_the_file.shouldDelete = False
 
@@ -57,7 +58,6 @@ print(r"""
 def main():
     guess = None
     while guess != passcode:
-
         guess = input("ENTER THE PASSCODE > ")
 
         if guess == passcode:
