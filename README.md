@@ -1,17 +1,27 @@
 # Alphabetical Authentication
 
-Nödvändiga libraries:
+## Requirements
+This project uses the following standard library modules:
+- random
+- string
+- threading
+- os
+- signal
+
+Ensure Python 3.x (>=3.8) is installed, as these versions of the standard library modules are included.
+
+To convert the source code to a .exe or equivalent executable file run the following:
 ```powershell
 pip install pyinstaller
 ```
 
-Om detta **inte** fungerar:
+If this **doesn't** work:
 
 ```powershell
 python -m pip install pyinstaller
 ```
 
-För att paketera filen till en `.exe fil` användes följande kommando:
+To package the source code to a `.exe file` use the following command:
 
 ```powershell
 pyinstaller --onefile --console alpha_auth.py
