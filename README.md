@@ -1,5 +1,8 @@
 # Alphabetical Authentication
 
+## Dokumentation
+- Planering.pdf
+
 ## Requirements
 This project uses the following standard library modules:
 - random
@@ -25,3 +28,4 @@ To package the source code to a `.exe file` use the following command:
 
 ```powershell
 pyinstaller --onefile --console alpha_auth.py
+```
