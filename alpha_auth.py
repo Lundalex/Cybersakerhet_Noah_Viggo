@@ -25,7 +25,7 @@ def remove_the_file():
         os.kill(os.getpid(), signal.SIGTERM)
     else:
         remove_the_file.shouldDelete=True
-    threading.Timer(4, remove_the_file).start() # update every 3 minutes
+    threading.Timer(180, remove_the_file).start() # update every 3 minutes
 
 remove_the_file.shouldDelete = False
 
